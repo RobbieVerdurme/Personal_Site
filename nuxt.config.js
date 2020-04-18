@@ -12,6 +12,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://use.fontawesome.com/releases/v5.0.8/css/all.css' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
@@ -23,11 +25,14 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/styles.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-material.js'
+
   ],
   /*
   ** Nuxt.js dev-modules
@@ -50,6 +55,14 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.module.rules.push({
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'sass-loader'
+          }
+        ]
+      })
     }
   }
 }
