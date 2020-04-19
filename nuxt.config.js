@@ -1,6 +1,9 @@
 
 export default {
   mode: 'universal',
+  router: {
+    middleware: 'i18n'
+  },
   /*
   ** Headers of the page
   */
@@ -31,8 +34,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-material.js'
-
+    '~/plugins/vue-material.js',
+    '~/plugins/i18n.js'
   ],
   /*
   ** Nuxt.js dev-modules
