@@ -7,13 +7,10 @@
             <div class="md-layout">
               <div class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto">
                 <h2 class="text-center title" style="color:#3c4858">
-                  Contact formulier
+                  {{ $t('contact.title') }}
                 </h2>
                 <h4 class="text-center description">
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one and contact us about any
-                  further collaboration. We will responde get back to you in a
-                  couple of hours.
+                  {{ $t('contact.description') }}
                 </h4>
                 <contactForm />
               </div>

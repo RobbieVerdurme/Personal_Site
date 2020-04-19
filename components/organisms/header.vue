@@ -9,7 +9,7 @@
     <div class="md-toolbar-row md-collapse-lateral">
       <!--Left site menu-->
       <div class="md-toolbar-section-start">
-        <nuxt-link :to="{name:'index'}">
+        <nuxt-link :to="{name: 'index'}">
           <h3 class="md-title">
             Robbie Verdurme
           </h3>
@@ -39,70 +39,73 @@
             </mobile-menu>
             <md-list>
               <!--Home-->
-              <md-list-item :to="{name:'index'}">
+              <md-list-item :to="{name: 'index'}">
                 <i class="material-icons">home</i>
-                <p>Home</p>
+                <p>{{ $t('links.home') }}</p>
               </md-list-item>
               <!--/Home-->
 
               <!--Profile-->
               <md-list-item :to="{name:'profile'}">
                 <i class="material-icons">account_circle</i>
-                <p>Profiel</p>
+                <p>{{ $t('links.profile') }}</p>
               </md-list-item>
               <!--/Profile-->
 
               <!--Contact-->
               <md-list-item :to="{name:'contact'}">
                 <i class="material-icons">email</i>
-                <p>Contact</p>
+                <p>{{ $t('links.contact') }}</p>
               </md-list-item>
               <!--/Contact-->
 
-              <!--Github-->
-              <md-list-item
-                href="https://github.com/RobbieVerdurme"
-                target="_blank"
-              >
-                <i class="fab fa-github" />
-                <p class="hidden-lg">
-                  Github
-                </p>
-                <md-tooltip md-direction="bottom">
-                  Follow me on Github
-                </md-tooltip>
-              </md-list-item>
-              <!--/Github-->
+              <!--Dropdown taal-->
+              <li class="md-list-item">
+                <div
+                  class="item md-list-item-router md-list-item-container md-button-clean dropdown"
+                >
+                  <div class="md-list-item-content">
+                    <dropdown direction="down">
+                      <md-button
+                        slot="title"
+                        class="md-button md-button-link md-white md-simple dropdown-toggle"
+                        data-toggle="dropdown"
+                      >
+                        <i class="material-icons">translate</i>
+                        <p>{{ $t('links.language') }}</p>
+                      </md-button>
+                      <!--List language-->
+                      <ul class="dropdown-menu dropdown-with-icons">
+                        <!--/Nederlands-->
+                        <li>
+                          <a @click="changeLanguage('nl')">
+                            <p>{{ $t('links.dutch') }}</p>
+                          </a>
+                        </li>
+                        <!--/Nederlands-->
 
-              <!--Facebook-->
-              <md-list-item
-                href="https://www.facebook.com/robbie.verdurme"
-                target="_blank"
-              >
-                <i class="fab fa-facebook-square" />
-                <p class="hidden-lg">
-                  Facebook
-                </p>
-                <md-tooltip md-direction="bottom">
-                  Follow me on Facebook
-                </md-tooltip>
-              </md-list-item>
-              <!--/Facebook-->
+                        <!--/Engels-->
+                        <li>
+                          <a @click="changeLanguage('en')">
+                            <p>{{ $t('links.english') }}</p>
+                          </a>
+                        </li>
+                        <!--/Engels-->
 
-              <!--Linkedin-->
-              <md-list-item
-                href="https://www.linkedin.com/in/robbie-verdurme/"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin" />
-                <p class="hidden-lg">
-                  Linked-in
-                </p>
-                <md-tooltip md-direction="bottom">
-                  Follow me on Linked-in
-                </md-tooltip>
-              </md-list-item>
-              <!--/Linkedin-->
+                        <!--Frans-->
+                        <li>
+                          <a @click="changeLanguage('fr')">
+                            <p>{{ $t('links.french') }}</p>
+                          </a>
+                        </li>
+                        <!--/Frans-->
+                      </ul>
+                      <!--/List language-->
+                    </dropdown>
+                  </div>
+                </div>
+              </li>
+              <!--/Dropdown taal-->
             </md-list>
           </div>
         </div>
@@ -114,8 +117,6 @@
 </template>
 
 <script>
-import MobileMenu from '~/components/molecules/mobileMenu'
-
 let resizeTimeout
 function resizeThrottler (actualResizeHandler) {
   // ignore resize events as long as an actualResizeHandler execution is in the queue
@@ -130,7 +131,8 @@ function resizeThrottler (actualResizeHandler) {
 
 export default {
   components: {
-    MobileMenu
+    MobileMenu: () => import('~/components/molecules/mobileMenu'),
+    Dropdown: () => import('~/components/molecules/dropdown')
   },
   props: {
     type: {
@@ -166,6 +168,9 @@ export default {
     document.removeEventListener('scroll', this.scrollListener)
   },
   methods: {
+    changeLanguage (lang) {
+      this.$i18n.locale = lang
+    },
     bodyClick () {
       if (process.browser) {
         const bodyClick = document.getElementById('bodyClick')

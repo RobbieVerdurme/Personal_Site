@@ -1,6 +1,9 @@
 
 export default {
   mode: 'universal',
+  router: {
+    middleware: 'i18n'
+  },
   /*
   ** Headers of the page
   */
@@ -13,8 +16,7 @@ export default {
     ],
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://use.fontawesome.com/releases/v5.0.8/css/all.css' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/icon.png' }
     ]
   },
   /*
@@ -31,8 +33,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-material.js'
-
+    '~/plugins/vue-material.js',
+    '~/plugins/i18n.js',
+    '~/plugins/vue-clickaway.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,6 +50,11 @@ export default {
   modules: [
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    icon: {
+      iconSrc: '/icon.png'
+    }
+  },
   /*
   ** Build configuration
   */

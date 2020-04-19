@@ -4,12 +4,5 @@ export default {
    */
   getNavbar: (state) => {
     return state.navbar
-  },
-
-  /**
-   * get projects
-   */
-  getProjects: (state) => {
-    return state.projects
   }
 }
