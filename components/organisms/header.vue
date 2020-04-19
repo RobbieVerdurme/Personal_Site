@@ -9,7 +9,7 @@
     <div class="md-toolbar-row md-collapse-lateral">
       <!--Left site menu-->
       <div class="md-toolbar-section-start">
-        <nuxt-link :to="{name:'index'}">
+        <nuxt-link :to="$i18n.path('')">
           <h3 class="md-title">
             Robbie Verdurme
           </h3>
@@ -39,23 +39,23 @@
             </mobile-menu>
             <md-list>
               <!--Home-->
-              <md-list-item :to="{name:'index'}">
+              <md-list-item :to="{name: 'index'}">
                 <i class="material-icons">home</i>
-                <p>Home</p>
+                <p>{{ $t('links.home') }}</p>
               </md-list-item>
               <!--/Home-->
 
               <!--Profile-->
               <md-list-item :to="{name:'profile'}">
                 <i class="material-icons">account_circle</i>
-                <p>Profiel</p>
+                <p>{{ $t('links.profile') }}</p>
               </md-list-item>
               <!--/Profile-->
 
               <!--Contact-->
               <md-list-item :to="{name:'contact'}">
                 <i class="material-icons">email</i>
-                <p>Contact</p>
+                <p>{{ $t('links.contact') }}</p>
               </md-list-item>
               <!--/Contact-->
 
@@ -72,31 +72,31 @@
                         data-toggle="dropdown"
                       >
                         <i class="material-icons">translate</i>
-                        <p>Taal</p>
+                        <p>{{ $t('links.language') }}</p>
                       </md-button>
                       <!--List language-->
                       <ul class="dropdown-menu dropdown-with-icons">
                         <!--/Nederlands-->
                         <li>
-                          <nuxt-link to="/landing">
-                            <p>Nederlands</p>
-                          </nuxt-link>
+                          <a @click="changeLanguage('nl')">
+                            <p>{{ $t('links.dutch') }}</p>
+                          </a>
                         </li>
                         <!--/Nederlands-->
 
                         <!--/Engels-->
                         <li>
-                          <nuxt-link to="/login">
-                            <p>Engels</p>
-                          </nuxt-link>
+                          <a @click="changeLanguage('en')">
+                            <p>{{ $t('links.english') }}</p>
+                          </a>
                         </li>
                         <!--/Engels-->
 
                         <!--Frans-->
                         <li>
-                          <nuxt-link to="/profile">
-                            <p>Frans</p>
-                          </nuxt-link>
+                          <a @click="changeLanguage('fr')">
+                            <p>{{ $t('links.french') }}</p>
+                          </a>
                         </li>
                         <!--/Frans-->
                       </ul>
@@ -168,6 +168,9 @@ export default {
     document.removeEventListener('scroll', this.scrollListener)
   },
   methods: {
+    changeLanguage (lang) {
+      this.$i18n.locale = lang
+    },
     bodyClick () {
       if (process.browser) {
         const bodyClick = document.getElementById('bodyClick')

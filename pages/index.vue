@@ -7,10 +7,10 @@
             class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
           >
             <h1 class="title">
-              Welkom
+              {{ $t('home.title') }}
             </h1>
             <h4>
-              Dit e-portfolio heeft als bedoeling u als bezoeker van deze website een betere blik te geven over mijn competenties en vaardigheden. Hopelijk kan ik u via deze weg een ruim beeld geven van mijn competenties en persoonlijkheid.
+              {{ $t('home.introduction') }}
             </h4>
             <br>
             <md-button :to="{name:'profile'}" class="md-success md-lg">

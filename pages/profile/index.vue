@@ -25,7 +25,7 @@
                   >
                     <i class="fab fa-facebook-square" />
                     <md-tooltip md-direction="bottom">
-                      Follow me on Facebook
+                      {{ $t('profile.facebook') }}
                     </md-tooltip>
                   </md-button>
                   <md-button
@@ -34,7 +34,7 @@
                   >
                     <i class="fab fa-github" />
                     <md-tooltip md-direction="bottom">
-                      Follow me on Github
+                      {{ $t('profile.github') }}
                     </md-tooltip>
                   </md-button>
                   <md-button
@@ -43,7 +43,7 @@
                   >
                     <i class="fab fa-linkedin" />
                     <md-tooltip md-direction="bottom">
-                      Follow me on Linked-in
+                      {{ $t('profile.linkedin') }}
                     </md-tooltip>
                   </md-button>
                 </div>
@@ -52,7 +52,7 @@
           </div>
           <div class="description text-center">
             <p>
-              Mijn naam is&nbsp;<strong>Robbie Verdurme</strong>. Ik ben geboren op 20 Januari 1998 te Gent. In het dagelijkse leven kunt u me vooral terugvinden op de schoolbanken. Ik studeer Toegepaste Informatica aan de HoGent, zit momenteel in het 3de jaar en heb de richting ‘mobile’ gekozen. Dit had mijn voorkeur omdat dit me meer aanspreekt. Je kan ook meer van jezelf in de code kan leggen.
+              {{ $t('profile.intro') }}
             </p>
           </div>
           <div class="profile-tabs">

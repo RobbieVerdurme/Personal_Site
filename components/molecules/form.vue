@@ -3,26 +3,26 @@
     <div class="md-layout">
       <div class="md-layout-item md-size-50">
         <md-field>
-          <label>Your Name</label>
+          <label>{{ $t('contact.nameForm') }}</label>
           <md-input v-model="name" type="text" />
         </md-field>
       </div>
       <div class="md-layout-item md-size-50">
         <md-field>
-          <label>Your Email</label>
+          <label>{{ $t('contact.emailForm') }}</label>
           <md-input v-model="email" type="email" />
         </md-field>
       </div>
     </div>
     <md-field maxlength="5">
-      <label>Your Message</label>
+      <label>{{ $t('contact.messageForm') }}</label>
       <md-textarea v-model="message" />
     </md-field>
     <br>
     <div class="md-layout">
       <div class="md-layout-item md-size-33 mx-auto text-center">
         <md-button class="md-success">
-          Send Message
+          {{ $t('contact.sendFrom') }}
         </md-button>
       </div>
     </div>

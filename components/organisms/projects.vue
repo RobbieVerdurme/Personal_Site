@@ -11,7 +11,7 @@ export default {
   },
   data () {
     return {
-      projects: this.$store.getters.getProjects
+      projects: this.$t('profile.projects')
     }
   }
 }
