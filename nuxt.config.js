@@ -16,8 +16,7 @@ export default {
     ],
     link: [
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://use.fontawesome.com/releases/v5.0.8/css/all.css' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/icon.png' }
     ]
   },
   /*
@@ -51,6 +50,11 @@ export default {
   modules: [
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    icon: {
+      iconSrc: '/icon.png'
+    }
+  },
   /*
   ** Build configuration
   */
