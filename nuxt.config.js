@@ -1,6 +1,9 @@
 
 export default {
   mode: 'universal',
+  router: {
+    middleware: 'i18n'
+  },
   /*
   ** Headers of the page
   */
@@ -12,7 +15,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons' },
+      { rel: 'icon', type: 'image/png', href: '/icon.png' }
     ]
   },
   /*
@@ -23,11 +27,15 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/styles.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-material.js',
+    '~/plugins/i18n.js',
+    '~/plugins/vue-clickaway.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -42,6 +50,11 @@ export default {
   modules: [
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    icon: {
+      iconSrc: '/icon.png'
+    }
+  },
   /*
   ** Build configuration
   */
@@ -50,6 +63,14 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.module.rules.push({
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'sass-loader'
+          }
+        ]
+      })
     }
   }
 }
