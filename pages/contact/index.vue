@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import Parallax from '~/components/organisms/parallax'
+import Parallax from '~/components/molecules/parallax'
 
 export default {
   components: {
-    contactForm: () => import('~/components/organisms/form'),
+    contactForm: () => import('~/components/molecules/form'),
     Parallax
   },
   data () {

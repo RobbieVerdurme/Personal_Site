@@ -28,3 +28,15 @@
     </div>
   </form>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      name: null,
+      email: null,
+      message: null
+    }
+  }
+}
+</script>

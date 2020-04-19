@@ -53,10 +53,25 @@
           <div class="description text-center">
             <p>
               Mijn naam is&nbsp;<strong>Robbie Verdurme</strong>. Ik ben geboren op 20 Januari 1998 te Gent. In het dagelijkse leven kunt u me vooral terugvinden op de schoolbanken. Ik studeer Toegepaste Informatica aan de HoGent, zit momenteel in het 3de jaar en heb de richting ‘mobile’ gekozen. Dit had mijn voorkeur omdat dit me meer aanspreekt. Je kan ook meer van jezelf in de code kan leggen.
-              <br><br>Mijn eerste tot zesde leerjaar basisonderwijs heb ik gevolgt in Sint-lieven Kolegem. Deze school heeft ook veel zorgzame leerkrachten. Zij proberen er alles aan te doen om je er welkom te voelen. Dit was ook voor mij het geval. Toen ik er voor het eerst kwam, was ik nogal onzeker en was alles nog wat nieuw. Maar dankzij de hulp van het lieftallig leerkrachtenkorps voelde ik me bijna direct thuis in de groep.
-              <br><br>Voor het middelbare onderwijs heb ik besloten te veranderen van school en heb zes jaar les gevolgd op de Visitatie te Mariakerke. Ondanks het feit dat deze school een redelijk slechte reputatie heeft onder de leerlingen, zijn de leerkrachten nog altijd de sterkte punten van deze school. Hier heb ik een eerste studiekeuze moeten maken. Met de nodige begeleiding heb ik uiteindelijk voor de keuze IT gekozen. Deze richting ligt mij het meest en ik wou hierin ook verder in de hogeschool.
-              <br><br>De keuze om verder te studeren was zo goed als onmiddellijk gemaakt. Voor de job die ik later wil uitvoeren (IT-er van een bedrijf) is nu eenmaal een bachelor diploma noodzakelijk. Ook de keuze van hogeschool was al zo goed als gemaakt. De keuze ging tussen Hogent (mijn huidige hogeschool) en Odisee. Mijn voorkeur ging uiteindelijk uit naar Hogent.
             </p>
+          </div>
+          <div class="profile-tabs">
+            <tabs
+              :tab-name="['Mijn leven', 'Projecten']"
+              :tab-icon="['face', 'library_books']"
+              plain
+              nav-pills-icons
+              color-button="success"
+            >
+              <!-- here you can add your content for tab-content -->
+              <!--Projects-->
+              <template slot="tab-pane-1">
+                <profileInfo />
+              </template>
+              <template slot="tab-pane-2">
+                <projects />
+              </template>
+            </tabs>
           </div>
         </div>
       </div>
@@ -65,11 +80,13 @@
 </template>
 
 <script>
-import Parallax from '~/components/organisms/parallax'
 
 export default {
   components: {
-    Parallax
+    Parallax: () => import('~/components/molecules/parallax'),
+    Tabs: () => import('~/components/molecules/tabs'),
+    profileInfo: () => import('~/components/molecules/profileinfo'),
+    projects: () => import('~/components/organisms/projects')
   },
   data () {
     return {
@@ -78,6 +95,9 @@ export default {
     }
   },
   computed: {
+    /**
+     * paralax image
+     */
     headerStyle () {
       return {
         backgroundImage: `url(${this.header})`
