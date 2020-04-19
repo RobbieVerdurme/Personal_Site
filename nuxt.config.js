@@ -35,7 +35,8 @@ export default {
   */
   plugins: [
     '~/plugins/vue-material.js',
-    '~/plugins/i18n.js'
+    '~/plugins/i18n.js',
+    '~/plugins/vue-clickaway.js'
   ],
   /*
   ** Nuxt.js dev-modules
