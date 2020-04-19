@@ -57,20 +57,24 @@
           </div>
           <div class="profile-tabs">
             <tabs
-              :tab-name="['Mijn leven', 'Projecten']"
+              :tab-name="[$t('profile.lifeTab'), $t('profile.projectsTab')]"
               :tab-icon="['face', 'library_books']"
               plain
               nav-pills-icons
               color-button="success"
             >
               <!-- here you can add your content for tab-content -->
-              <!--Projects-->
+              <!--Life-->
               <template slot="tab-pane-1">
                 <profileInfo />
               </template>
+              <!--/Life-->
+
+              <!--Projects-->
               <template slot="tab-pane-2">
                 <projects />
               </template>
+              <!--/Projects-->
             </tabs>
           </div>
         </div>

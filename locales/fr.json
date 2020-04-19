@@ -13,6 +13,8 @@
         "introduction": "Ce e-portefeuille vous vise en tant que visiteur de ce site pour donner un meilleur regard sur mes compétences et aptitudes. J’espère que je peux obtenir de cette façon, un grand tableau de mes compétences et ma personnalité."
     },
     "profile": {
+        "lifeTab": "Ma vie",
+        "projectsTab": "Projets",
         "github": "Suivez-moi sur Github",
         "facebook": "Suivez-moi sur Facebook",
         "linkedin": "Suivez-moi sur Linkedin",

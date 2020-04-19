@@ -9,7 +9,7 @@
     <div class="md-toolbar-row md-collapse-lateral">
       <!--Left site menu-->
       <div class="md-toolbar-section-start">
-        <nuxt-link :to="$i18n.path('')">
+        <nuxt-link :to="{name: 'index'}">
           <h3 class="md-title">
             Robbie Verdurme
           </h3>

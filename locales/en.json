@@ -13,6 +13,8 @@
         "introduction": "This portfolio has the goal of informing you what my competences an skills are. I hope this site gives you a broad picture of my competences and personality."
     },
     "profile": {
+        "lifeTab": "Life",
+        "projectsTab": "Projects",
         "github": "Follow me on Github",
         "facebook": "Follow me on Facebook",
         "linkedin": "Follow me on Linkedin",
