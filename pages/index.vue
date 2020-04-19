@@ -14,7 +14,7 @@
             </h4>
             <br>
             <md-button :to="{name:'profile'}" class="md-success md-lg">
-              Profiel <i class="material-icons">arrow_forward</i>
+              {{ $t('links.profile') }} <i class="material-icons">arrow_forward</i>
             </md-button>
           </div>
         </div>
