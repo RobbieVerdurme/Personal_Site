@@ -59,50 +59,53 @@
               </md-list-item>
               <!--/Contact-->
 
-              <!--Github-->
-              <md-list-item
-                href="https://github.com/RobbieVerdurme"
-                target="_blank"
-              >
-                <i class="fab fa-github" />
-                <p class="hidden-lg">
-                  Github
-                </p>
-                <md-tooltip md-direction="bottom">
-                  Follow me on Github
-                </md-tooltip>
-              </md-list-item>
-              <!--/Github-->
+              <!--Dropdown taal-->
+              <li class="md-list-item">
+                <div
+                  class="item md-list-item-router md-list-item-container md-button-clean dropdown"
+                >
+                  <div class="md-list-item-content">
+                    <dropdown direction="down">
+                      <md-button
+                        slot="title"
+                        class="md-button md-button-link md-white md-simple dropdown-toggle"
+                        data-toggle="dropdown"
+                      >
+                        <i class="material-icons">translate</i>
+                        <p>Taal</p>
+                      </md-button>
+                      <!--List language-->
+                      <ul class="dropdown-menu dropdown-with-icons">
+                        <!--/Nederlands-->
+                        <li>
+                          <nuxt-link to="/landing">
+                            <p>Nederlands</p>
+                          </nuxt-link>
+                        </li>
+                        <!--/Nederlands-->
 
-              <!--Facebook-->
-              <md-list-item
-                href="https://www.facebook.com/robbie.verdurme"
-                target="_blank"
-              >
-                <i class="fab fa-facebook-square" />
-                <p class="hidden-lg">
-                  Facebook
-                </p>
-                <md-tooltip md-direction="bottom">
-                  Follow me on Facebook
-                </md-tooltip>
-              </md-list-item>
-              <!--/Facebook-->
+                        <!--/Engels-->
+                        <li>
+                          <nuxt-link to="/login">
+                            <p>Engels</p>
+                          </nuxt-link>
+                        </li>
+                        <!--/Engels-->
 
-              <!--Linkedin-->
-              <md-list-item
-                href="https://www.linkedin.com/in/robbie-verdurme/"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin" />
-                <p class="hidden-lg">
-                  Linked-in
-                </p>
-                <md-tooltip md-direction="bottom">
-                  Follow me on Linked-in
-                </md-tooltip>
-              </md-list-item>
-              <!--/Linkedin-->
+                        <!--Frans-->
+                        <li>
+                          <nuxt-link to="/profile">
+                            <p>Frans</p>
+                          </nuxt-link>
+                        </li>
+                        <!--/Frans-->
+                      </ul>
+                      <!--/List language-->
+                    </dropdown>
+                  </div>
+                </div>
+              </li>
+              <!--/Dropdown taal-->
             </md-list>
           </div>
         </div>
@@ -114,8 +117,6 @@
 </template>
 
 <script>
-import MobileMenu from '~/components/molecules/mobileMenu'
-
 let resizeTimeout
 function resizeThrottler (actualResizeHandler) {
   // ignore resize events as long as an actualResizeHandler execution is in the queue
@@ -130,7 +131,8 @@ function resizeThrottler (actualResizeHandler) {
 
 export default {
   components: {
-    MobileMenu
+    MobileMenu: () => import('~/components/molecules/mobileMenu'),
+    Dropdown: () => import('~/components/molecules/dropdown')
   },
   props: {
     type: {
