@@ -1,9 +1,15 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/Personal_Site/'
+  }
+} : {}
 
 export default {
-  mode: 'universal',
-  router: {
-    middleware: 'i18n'
+  env: {
+    baseUrl: process.env.BASE_URL || 'https://robbieverdurme.github.io/testRepo/'
   },
+  ...routerBase,
+  mode: 'universal',
   /*
   ** Headers of the page
   */

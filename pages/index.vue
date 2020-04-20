@@ -32,7 +32,7 @@ export default {
   },
   data () {
     return {
-      header: '/img/background.jpg'
+      header: 'img/background.jpg'
     }
   },
   computed: {

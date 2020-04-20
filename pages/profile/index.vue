@@ -94,8 +94,8 @@ export default {
   },
   data () {
     return {
-      header: '/img/background.jpg',
-      img: '/img/faces/ProfilePic.jpg'
+      header: 'img/background.jpg',
+      img: 'img/faces/ProfilePic.jpg'
     }
   },
   computed: {

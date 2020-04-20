@@ -24,35 +24,35 @@
         "future" : "The choice to study further was made almost immediately. Because IT is wat I wanted to do later on (IT'er at a company) I had to have a higher degree than I already had. The choice of which high school was already as good as made, so i went to HoGent.",
         "projects": [
             {
-                "img": "/img/projects/Pazaak.png",
+                "img": "img/projects/Pazaak.png",
                 "name": "Pazaak",
                 "description": "This is the first project that was realised. It was made in the first year of high school. Here you can learn how to work in a team."
             },
             {
-                "img": "/img/projects/BreakoutBox_Java.png",
-                "img2": "/img/projects/BreakoutBox_NET.png",
+                "img": "img/projects/BreakoutBox_Java.png",
+                "img2": "img/projects/BreakoutBox_NET.png",
                 "name": "BreakoutBox",
                 "description": "This project was realised in the 2nd year of High school. The intention is have a concrete elaboration of an escape room. But instead of looking around for hints to continue, you have to find the answer of an exercise. If you solve all the questions you will find the treasure."
             },
             {
-                "img": "/img/projects/MenuApp_Homescreen.jpg",
-                "img2": "/img/projects/MenuApp_ListMenu.jpg",
+                "img": "img/projects/MenuApp_Homescreen.jpg",
+                "img2": "img/projects/MenuApp_ListMenu.jpg",
                 "name": "Menu App",
                 "description": "During the course our Android they asked us to make an app for the exam. My idea was a design of a menuapp so the person who uses the app not immediately know what to eat that evening and obtain a proposal of a dish. For this I called the menuapp. In this app you can enter a number of dishes with the preparation so as to compile a list of dishes together."
             },
             {
-                "img": "/img/projects/AngularSite_homescreen.jpg",
+                "img": "img/projects/AngularSite_homescreen.jpg",
                 "name": "Angular Site",
                 "description": "This site was a project myself. The intention was to create a photo site for my mother. This site should be user-friendly for both the user and for my mother. This site also could submit my mother photos to customize and brand new place."
             },
             {
-                "img": "/img/projects/MultiWeb_Challenge.jpg",
-                "img2": "/img/projects/MultiWeb_Login.jpg",
+                "img": "img/projects/MultiWeb_Challenge.jpg",
+                "img2": "img/projects/MultiWeb_Login.jpg",
                 "name": "MultiWeb",
                 "description": "This app was commissioned by the company Multimed under the course Projects 3. Multimed wanted an app where the user had an overview of the challenges they still have to complete in order to live healthier"
             },
             {
-                "img": "/img/projects/StadsApp.jpg",
+                "img": "img/projects/StadsApp.jpg",
                 "name": "Stads App",
                 "description": "We also spent time during our training to focus on how to make a good app for windows. With this app we want to solve the problem of the surrounding shops. With our app you can see all the shops in the neighborhood. These stores have their own category and discounts."
             }
