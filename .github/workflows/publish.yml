@@ -18,6 +18,9 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      
+    - name: install dependencies
+      run: npm install
 
     # deploy commands to deploy to git pages
     - name: deploy to git pages
