@@ -10,7 +10,7 @@
     },
     "home": {
         "title": "Bienvenue",
-        "introduction": "Ce e-portefeuille vous vise en tant que visiteur de ce site pour donner un meilleur regard sur mes compétences et aptitudes. J’espère que je peux obtenir de cette façon, un grand tableau de mes compétences et ma personnalité."
+        "introduction": "Cet e-portefeuille vous accueille en tant que visiteur afin de vous donner un éventail de mes compétences et aptitudes. J’espère obtenir en retour une bonne évaluation de mes compétences et également de ma personnalité."
     },
     "profile": {
         "lifeTab": "Ma vie",
@@ -18,43 +18,43 @@
         "github": "Suivez-moi sur Github",
         "facebook": "Suivez-moi sur Facebook",
         "linkedin": "Suivez-moi sur Linkedin",
-        "intro": "Mon nom est Robbie Verdurme, Je suis née le 20 janvier 1998 à Gand. Dans la vie quotidienne, vous pouvez me trouver dans la salle de classe. Je suis un étudiant d'informatique appliquée à la collège de Gand. Maintenant je me trouve dans la 3e année et j'ai choisie l'option mobile. J'ai fait cette choix parce que cela m'intresse plus et c'est plus facile de mettre une pièce de moi dans le code.",
-        "primarySchool": "Dans ma leçon de l’école primaire, suivie de ma première année jusqu'à mon sixième à l’école Sint-lieven Kolegem. Cette école a beaucoup de professeurs qui s’occupent et s’engage à aider vous se sentent les bienvenus. C’était aussi le cas pour moi, quand je suis arrivé, j’étais encore incertain sur les gens là-bas et tout était toujours quoi de neuf, mais grâce à l’aide des enseignants belles, je me sentais presque chez vous dans le groupe.",
-        "highSchool": "Pour une école secondaire, j’ai les suivie sur la visitation mariakerke. Malgré que cette école a une assez mauvaise réputation parmi les disciples, les enseignants sont toujours les points forts de cette école. Ici, j’ai un premier choix. C’est ce que je voulais étudier plus avant. J’ai toujours l’information nécessaire pour choisir il choisi parce que c’était moi plus.",
-        "future" : "Le choix pour une étude plus approfondie a été effectué presque immédiatement. Pour ce que j’allais faire en cas d’emploi (il y a une société) vous avez eu à un degré plus élevé que j’avais gagné déjà déjà. J’ai aussi le choix de ce lycée a été créée, agent de centre d’appel choisi.",
+        "intro": "Je m’appelle Robbie Verdurme. Je suis né le 20 janvier 1998 à Gand. Dans la vie quotidienne, vous pouvez me trouver en classe. Je suis étudiant en 3è année en informatique appliquée, option mobile, au collège de Gand. J’ai choisi cette option pour la facilité de modifier le code.",
+        "primarySchool": "J’ai passé mes 6 années primaires à l’école Sint-Lieven Kolegem. Dans cette école, les professeurs sont engagés envers les élèves et vous vous sentez le bienvenu. Quand je suis arrivé dans cette école, tout était neuf pour moi, et un peu stressé, mais grâce à la bienveillance des enseignants, je me suis senti comme chez moi dans ce groupe.",
+        "highSchool": "Mes études secondaires, je les ai suivies à Visitatie Mariakerke. Malgré la mauvaise réputation de cette école parmi les élèves, les enseignants en sont le point fort. Et c’est là que j’ai décidé ce que je voulais faire plus tard, l’informatique.",
+        "future" : "Pour l’enseignement supérieur, le choix de la matière a été directement décidé. Je savais ce que je voulais faire pour mon futur. Je devais avoir un plus haut niveau de connaissances que j’avais déjà. C’est la raison pour laquelle j’ai choisi cette école supérieure.",
         "projects": [
             {
                 "img": "img/projects/Pazaak.png",
                 "name": "Pazaak",
-                "description": "C'était le première projet realisé dans le premier collège de l’année. Avec Pazaal vous obtenez le competence de travailler en équipe."
+                "description": "C’est le premier projet réalisé pendant la 1ère année. Vous apprenez à travailler en équipe."
             },
             {
                 "img": "img/projects/BreakoutBox_Java.png",
                 "img2": "img/projects/BreakoutBox_NET.png",
                 "name": "BreakoutBox",
-                "description": "Ce projet a été réalisé dans le 2e année de collège. L'intention est d'avoir une élaboration concrète d'un chambre d'échappement. Mais au lieu de chercher des clues pour continuer, vous avez besoin de trouver la réponse d'un exicice. Si vous avez répondu tous les questions correctes, vous avez trouverais le trésor."
+                "description": "Projet réalisé pendant la 2è année. Le but est d’élaborer une évasion. Mais au lieu de chercher des issues pour continuer, vous devez trouver les réponses d’un questionnaire. Quand toutes les réponses sont correctes, vous avez trouvé le trésor."
             },
             {
                 "img": "img/projects/MenuApp_Homescreen.jpg",
                 "img2": "img/projects/MenuApp_ListMenu.jpg",
                 "name": "Menu App",
-                "description": "Au cours de notre Android, ils nous ont demandé de faire une application pour l'examen. Mon idée était une conception d'un menuapp de sorte que la personne qui utilise l'application sait pas tout de suite de quoi manger ce soir et d'obtenir une proposition d'un plat. Pour cela, je l'appelais menuapp. Dans cette application, vous pouvez entrer un certain nombre de plats à la préparation afin de dresser une liste de plats ensemble."
+                "description": "Au cours d’Android, il a été demandé de réaliser une application pour l’examen. Mon idée était de créer un MenuApp, de sorte que la personne utilisant cette application puisse choisir parmi une série de plats afin de composer son menu. C’est pourquoi je l’ai appelé MenuApp."
             },
             {
                 "img": "img/projects/AngularSite_homescreen.jpg",
                 "name": "Angular Site",
-                "description": "Ce site était moi-même un projet. L'intention était de créer un site de photo pour ma mère. Ce site doit être convivial pour l'utilisateur et pour ma mère. Ce site pourrait également présenter mes photos mère pour personnaliser et tout neuf."
+                "description": "C’est un projet dont le but est de créer un site photo pour ma mère. Il doit être convivial et permettre aux utilisateurs de donner leurs avis sur les différentes photos."
             },
             {
                 "img": "img/projects/MultiWeb_Challenge.jpg",
                 "img2": "img/projects/MultiWeb_Login.jpg",
                 "name": "MultiWeb",
-                "description": "Cette application a été commandée par la société Multimed dans le cours 3. Projets Multimed voulait une application où l'utilisateur a un aperçu des défis auxquels ils doivent encore remplir afin de vivre en meilleure santé."
+                "description": "Cette application a été commandée par la société Multimed dans le cours Projets (3è année). Multimed veut que l’utilisateur ait un aperçu des défis encore à réaliser pour vivre en excellente santé."
             },
             {
                 "img": "img/projects/StadsApp.jpg",
                 "name": "Stads App",
-                "description": "Nous avons également passé du temps au cours de notre formation pour se concentrer sur la façon de faire une bonne application pour Windows. Avec cette application, nous voulons résoudre le problème des commerces environnants. Avec notre application, vous pouvez voir tous les magasins dans le quartier. Ces magasins ont leur propre catégorie et des réductions."
+                "description": "Au cours de notre formation, nous nous sommes également concentrés sur la façon de développer une bonne application pour Windows. Avec cette application, nous voulons résoudre le problème des commerces environnants, voir les magasins de quartier, leur catégorie, leurs réductions."
             }
         ]
     },
