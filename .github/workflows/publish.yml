@@ -25,6 +25,8 @@ jobs:
       # commits the package-lock.json so git is clean
     - name: commit changes package-lock.json
       run: |
+        git config --global user.email ${GITHUB_ACTOR}
+        git config --global user.name ${GITHUB_ACTOR}
         git add .
         git commit -m "[Update] package-lock.json"
 
