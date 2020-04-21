@@ -1,9 +1,12 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/Personal_Site/'
+  }
+} : {}
 
 export default {
+  ...routerBase,
   mode: 'universal',
-  router: {
-    middleware: 'i18n'
-  },
   /*
   ** Headers of the page
   */
