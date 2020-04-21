@@ -21,6 +21,12 @@ jobs:
       
     - name: install dependencies
       run: npm install
+      
+      # commits the package-lock.json so git is clean
+    - name: commit changes package-lock.json
+      run: |
+        git add .
+        git commit -m "[Update] package-lock.json"
 
     # deploy commands to deploy to git pages
     - name: deploy to git pages
