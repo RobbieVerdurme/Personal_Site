@@ -36,6 +36,7 @@ $ npm run generate
 - sass-loader: https://www.npmjs.com/package/sass-loader
 - vue-i18n: https://kazupon.github.io/vue-i18n/introduction.html
 - cross-env: https://www.npmjs.com/package/cross-env
+- push-dir: https://www.npmjs.com/package/push-dir
 
 
 ## Nuxt
