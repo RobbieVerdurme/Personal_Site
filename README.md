@@ -6,7 +6,7 @@
 Look at the [Changelog](https://github.com/RobbieVerdurme/Personal_Site/blob/develop/Changelog.md)
 
 ## Demo
-This application is live on [heroku](https://robbieverdurme.herokuapp.com/)
+This application is live on [Gitpages](https://robbieverdurme.github.io/Personal_Site/)
 
 ## Build Setup
 
