@@ -57,6 +57,11 @@ export default {
   pwa: {
     icon: {
       iconSrc: '/icon.png'
+    },
+    manifest: {
+      name: 'Robbie Verdurme',
+      short_name: 'Robbie Verdurme',
+      lang: 'en'
     }
   },
   /*
