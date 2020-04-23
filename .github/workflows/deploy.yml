@@ -17,18 +17,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-      
-    - name: install dependencies
-      run: npm install
-      
-      # commits the package-lock.json so git is clean
-    - name: commit changes package-lock.json
-      run: |
-        git config --global user.email ${GITHUB_ACTOR}
-        git config --global user.name ${GITHUB_ACTOR}
-        git add .
-        git commit -m "[Update] package-lock.json"
+    - uses: action/checkout@v1
+
     # deploy commands to deploy to git pages
     - name: deploy to git pages
       run: |
