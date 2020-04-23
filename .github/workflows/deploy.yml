@@ -19,6 +19,18 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
       
+      # install packages
+    - name: install npm
+      run: npm install
+      
+      # commit package-lock.json to get clean git
+    - name: commmit package-lock.json
+      run: |
+        git config --global user.name ${GITHUB_ACTOR}
+        git config --global user.email ${GITHUB_ACTOR}
+        git add .
+        git commit -m "[Update] package-lock.json"
+      
     # deploy commands to deploy to git pages
     - name: deploy to git pages
       run: |
