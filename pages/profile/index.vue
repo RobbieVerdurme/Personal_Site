@@ -57,8 +57,8 @@
           </div>
           <div class="profile-tabs">
             <tabs
-              :tab-name="[$t('profile.lifeTab'), $t('profile.projectsTab')]"
-              :tab-icon="['face', 'library_books']"
+              :tab-name="[$t('profile.lifeTab'), $t('profile.projectsTab'), $t('profile.resumeTab')]"
+              :tab-icon="['face', 'library_books', 'picture_as_pdf']"
               plain
               nav-pills-icons
               color-button="success"
@@ -75,6 +75,12 @@
                 <projects />
               </template>
               <!--/Projects-->
+
+              <!--Resume-->
+              <template slot="tab-pane-3">
+                <resume />
+              </template>
+              <!--/Resume-->
             </tabs>
           </div>
         </div>
@@ -84,13 +90,13 @@
 </template>
 
 <script>
-
 export default {
   components: {
     Parallax: () => import('~/components/molecules/parallax'),
     Tabs: () => import('~/components/molecules/tabs'),
     profileInfo: () => import('~/components/molecules/profileinfo'),
-    projects: () => import('~/components/organisms/projects')
+    projects: () => import('~/components/organisms/projects'),
+    resume: () => import('~/components/molecules/resume.vue')
   },
   data () {
     return {
