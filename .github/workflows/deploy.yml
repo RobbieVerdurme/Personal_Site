@@ -29,7 +29,6 @@ jobs:
         git config --global user.name ${GITHUB_ACTOR}
         git add .
         git commit -m "[Update] package-lock.json"
-
     # deploy commands to deploy to git pages
     - name: deploy to git pages
       run: |
