@@ -67,6 +67,9 @@
     "messageForm": "Your message",
     "sendFrom": "Send message"
   },
+  "footer": {
+    "reportProblem": "Report a problem"
+  },
   "error": {
     "errorPreview": "This preview cannot be loaded"
   }
