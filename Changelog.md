@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 ## [1.0.0]
 ### Added
+- Pagination projects page | 2020-04-24
+- Projects page | 2020-04-24
 - Curriculum vitae on profile page | 2020-04-23
 - Formpree for contact page | 2020-04-20
 - Push-dir dev depen | 2020-04-20

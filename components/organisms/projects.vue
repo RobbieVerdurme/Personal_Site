@@ -1,6 +1,6 @@
 <template>
   <div>
-    <projectInfo v-for="project in projects" :key="project.name" :project="project" />
+    <projectInfo v-for="project in items" :key="project.name" :project="project" />
   </div>
 </template>
 
@@ -9,9 +9,10 @@ export default {
   components: {
     projectInfo: () => import('~/components/molecules/projectinfo')
   },
-  data () {
-    return {
-      projects: this.$t('profile.projects')
+  props: {
+    items: {
+      type: Array,
+      required: true
     }
   }
 }

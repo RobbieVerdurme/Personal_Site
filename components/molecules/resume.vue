@@ -1,11 +1,31 @@
 <template>
-  <iframe src="https://drive.google.com/file/d/1NcODE6iHm-q1_FmDnhHeCclQSAXqSpco/preview">
-    <span>{{ $t('error.errorPreview') }}</span>
-  </iframe>
+  <div>
+    <div class="center">
+      <md-progress-spinner v-if="loading" md-mode="indeterminate" />
+    </div>
+    <iframe src="https://drive.google.com/file/d/1NcODE6iHm-q1_FmDnhHeCclQSAXqSpco/preview" frameborder="0" :onLoad="loading=false">
+      <span>{{ $t('error.errorPreview') }}</span>
+    </iframe>
+  </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      loading: true
+    }
+  }
+}
+</script>
 <style  scoped>
 iframe {
   height: 40em !important;
   width: 100%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
 }
 </style>
