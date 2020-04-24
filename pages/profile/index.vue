@@ -72,7 +72,7 @@
 
               <!--Projects-->
               <template slot="tab-pane-2">
-                <projects />
+                <projects :items="projects" />
               </template>
               <!--/Projects-->
 
@@ -101,7 +101,8 @@ export default {
   data () {
     return {
       header: 'img/background.jpg',
-      img: 'img/faces/ProfilePic.jpg'
+      img: 'img/faces/ProfilePic.jpg',
+      projects: this.$t('profile.projects')
     }
   },
   computed: {
