@@ -18,9 +18,11 @@ export default {
   computed: {
     extraClasses () {
       switch (this.$route.name) {
-        case 'index' || 'contact':
+        case 'index':
+        case 'contact':
           return 'landing-page'
         case 'profile':
+        case 'projects':
           return 'profile-page'
         default:
           return ''
