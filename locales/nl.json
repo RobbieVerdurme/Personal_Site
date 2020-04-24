@@ -1,6 +1,7 @@
 {
   "links": {
     "home": "Home",
+    "projects": "Projecten",
     "profile": "Profiel",
     "contact": "Contact",
     "language": "Taal",
@@ -11,6 +12,10 @@
   "home": {
     "title": "Welkom",
     "introduction": "Dit e-portfolio heeft als bedoeling u als bezoeker van deze website een betere blik te geven over mijn competenties en vaardigheden. Hopelijk kan ik u via deze weg een ruim beeld geven van mijn competenties en persoonlijkheid."
+  },
+  "projects": {
+    "previous": "Vorige",
+    "next" : "Volgende"
   },
   "profile": {
     "resumeTab": "Curriculum Vitae",
