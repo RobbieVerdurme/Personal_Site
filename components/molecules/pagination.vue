@@ -4,7 +4,7 @@
       <!--/Previous page-->
       <li v-if="prev" class="page-item disabled">
         <nuxt-link :to="{name:'projects', query: {page: currentPage - 1}}" class="page-link">
-          Previous
+          {{ $t('projects.previous') }}
         </nuxt-link>
       </li>
       <!--/Previous page-->
@@ -26,7 +26,7 @@
       <!--Next page-->
       <li v-if="next" class="page-item">
         <nuxt-link :to="{name:'projects', query:{page: currentPage + 1}}" class="page-link">
-          Next
+          {{ $t('projects.next') }}
         </nuxt-link>
       </li>
       <!--/Next page-->
@@ -75,6 +75,9 @@ export default {
     }
   },
   watch: {
+    items () {
+      this.updateProperties()
+    },
     filterdItems () {
       this.updateFilterdItems()
     },
@@ -134,5 +137,8 @@ export default {
     position: absolute;
     left: 50%;
     margin-left: -110px;
+}
+.pagination > .page-item.active > a {
+  background-color: #4caf50 !important;
 }
 </style>
