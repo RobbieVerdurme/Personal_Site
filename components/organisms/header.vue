@@ -47,8 +47,8 @@
 
               <!--Projects-->
               <md-list-item :to="{name:'projects'}">
-                <i class="material-icons">account_circle</i>
-                <p>{{ $t('profile.projectsTab') }}</p>
+                <i class="material-icons">library_books</i>
+                <p>{{ $t('links.projects') }}</p>
               </md-list-item>
               <!--/Projects-->
 
