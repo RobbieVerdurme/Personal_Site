@@ -9,7 +9,7 @@
               <div class="profile">
                 <div class="name">
                   <h3 class="title">
-                    {{ $t('profile.projectsTab') }}
+                    {{ $t('links.projects') }}
                   </h3>
                 </div>
               </div>
@@ -53,6 +53,9 @@ export default {
   watch: {
     $route () {
       this.currentPage = this.$route.query.page ? parseInt(this.$route.query.page) : 1
+    },
+    '$i18n.locale' () {
+      this.projects = this.$t('profile.projects')
     }
   },
   created () {
