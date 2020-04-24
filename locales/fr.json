@@ -1,6 +1,7 @@
 {
   "links": {
     "home": "Page d'accueil",
+    "projects": "Projets",
     "profile": "à propos de moi",
     "contact": "Contact",
     "language": "Langue",
@@ -11,6 +12,10 @@
   "home": {
     "title": "Bienvenue",
     "introduction": "Cet e-portefeuille vous accueille en tant que visiteur afin de vous donner un éventail de mes compétences et aptitudes. J’espère obtenir en retour une bonne évaluation de mes compétences et également de ma personnalité."
+  },
+  "projects": {
+    "previous": "Précédent",
+    "next" : "Suivant"
   },
   "profile": {
     "resumeTab": "Curriculum Vitae",

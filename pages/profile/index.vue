@@ -72,7 +72,7 @@
 
               <!--Projects-->
               <template slot="tab-pane-2">
-                <projects />
+                <projects :items="projects" />
               </template>
               <!--/Projects-->
 
@@ -92,16 +92,20 @@
 <script>
 export default {
   components: {
-    Parallax: () => import('~/components/molecules/parallax'),
-    Tabs: () => import('~/components/molecules/tabs'),
+    parallax: () => import('~/components/molecules/parallax'),
+    tabs: () => import('~/components/molecules/tabs'),
     profileInfo: () => import('~/components/molecules/profileinfo'),
     projects: () => import('~/components/organisms/projects'),
     resume: () => import('~/components/molecules/resume.vue')
   },
   data () {
     return {
+      // images
       header: 'img/background.jpg',
-      img: 'img/faces/ProfilePic.jpg'
+      img: 'img/faces/ProfilePic.jpg',
+
+      // project data
+      projects: this.$t('profile.projects')
     }
   },
   computed: {
@@ -112,6 +116,14 @@ export default {
       return {
         backgroundImage: `url(${this.header})`
       }
+    }
+  },
+  watch: {
+    /**
+     * update projects with correct lang
+     */
+    '$i18n.locale' () {
+      this.projects = this.$t('profile.projects')
     }
   }
 }

@@ -1,6 +1,7 @@
 {
   "links": {
     "home": "Home",
+    "projects": "Projects",
     "profile": "Profile",
     "contact": "Contact",
     "language": "Language",
@@ -11,6 +12,10 @@
   "home": {
     "title": "Welcome",
     "introduction": "This portfolio has the goal of informing you what my competences an skills are. I hope this site gives you a broad picture of my competences and personality."
+  },
+  "projects": {
+    "previous": "Previous",
+    "next" : "Next"
   },
   "profile": {
     "resumeTab": "Curriculum Vitae",
