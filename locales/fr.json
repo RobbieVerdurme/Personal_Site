@@ -72,6 +72,9 @@
     "messageForm": "Votre message",
     "sendFrom": "Envoyer le message"
   },
+  "footer": {
+    "reportProblem": "Signaler un problème"
+  },
   "error": {
     "errorPreview": "Cet aperçu ne peut pas être chargé"
   }

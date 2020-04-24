@@ -72,6 +72,9 @@
     "messageForm": "Uw bericht",
     "sendFrom": "Bericht verzenden"
   },
+  "footer": {
+    "reportProblem": "Meld een probleem"
+  },
   "error": {
     "errorPreview": "Het voorbeeld kan niet geladen worden"
   }
