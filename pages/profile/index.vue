@@ -7,6 +7,7 @@
           <div class="md-layout">
             <div class="md-layout-item md-size-50 mx-auto">
               <div class="profile">
+                <!--IMAGE-->
                 <div class="avatar">
                   <img
                     :src="img"
@@ -14,11 +15,17 @@
                     class="img-raised rounded-circle img-fluid"
                   >
                 </div>
+                <!--IMAGE-->
+                <!--Profile name + links-->
                 <div class="name">
+                  <!--Name + job-->
                   <h3 class="title">
                     Robbie Verdurme
                   </h3>
                   <h6>Developer</h6>
+                  <!--/Name + job-->
+
+                  <!--Facebook-->
                   <md-button
                     href="https://www.facebook.com/robbie.verdurme"
                     class="md-just-icon md-simple md-facebook"
@@ -28,6 +35,9 @@
                       {{ $t('profile.facebook') }}
                     </md-tooltip>
                   </md-button>
+                  <!--/Facebook-->
+
+                  <!--Github-->
                   <md-button
                     href="https://github.com/RobbieVerdurme"
                     class="md-just-icon md-simple md-github"
@@ -37,6 +47,9 @@
                       {{ $t('profile.github') }}
                     </md-tooltip>
                   </md-button>
+                  <!--/Github-->
+
+                  <!--Linked in-->
                   <md-button
                     href="https://www.linkedin.com/in/robbie-verdurme/"
                     class="md-just-icon md-simple md-linkedin"
@@ -46,15 +59,21 @@
                       {{ $t('profile.linkedin') }}
                     </md-tooltip>
                   </md-button>
+                  <!--/Linked in-->
                 </div>
+                <!--/Profile name + links-->
               </div>
             </div>
           </div>
+          <!--Profile info-->
           <div class="description text-center">
             <p>
               {{ $t('profile.intro') }}
             </p>
           </div>
+          <!--/Profile info-->
+
+          <!--TABS-->
           <div class="profile-tabs">
             <tabs
               :tab-name="[$t('profile.lifeTab'), $t('profile.projectsTab'), $t('profile.resumeTab')]"
@@ -73,6 +92,9 @@
               <!--Projects-->
               <template slot="tab-pane-2">
                 <projects :items="projects" />
+                <md-button :to="{name:'projects'}" class="md-success">
+                  {{ $t('profile.allProjects') }}
+                </md-button>
               </template>
               <!--/Projects-->
 
@@ -83,6 +105,7 @@
               <!--/Resume-->
             </tabs>
           </div>
+          <!--/TABS-->
         </div>
       </div>
     </div>
@@ -105,7 +128,7 @@ export default {
       img: 'img/faces/ProfilePic.jpg',
 
       // project data
-      projects: this.$t('profile.projects')
+      projects: this.$t('profile.projects').slice(0, 2)
     }
   },
   computed: {
@@ -123,7 +146,7 @@ export default {
      * update projects with correct lang
      */
     '$i18n.locale' () {
-      this.projects = this.$t('profile.projects')
+      this.projects = this.$t('profile.projects').slice(0, 2)
     }
   }
 }
