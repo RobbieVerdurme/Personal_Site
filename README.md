@@ -1,6 +1,7 @@
 # Personal_Site
 
-> My Personal Site
+> My Personal Site.
+> The final version is pushed to the [CV](https://github.com/RobbieVerdurme/CV) repository
 
 ## Changes
 Look at the [Changelog](https://github.com/RobbieVerdurme/Personal_Site/blob/develop/Changelog.md)
