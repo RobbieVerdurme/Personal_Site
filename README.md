@@ -1,6 +1,6 @@
 # Personal_Site
 
-> My Personal Site
+> My Personal Site.
 
 ## Changes
 Look at the [Changelog](https://github.com/RobbieVerdurme/Personal_Site/blob/develop/Changelog.md)
