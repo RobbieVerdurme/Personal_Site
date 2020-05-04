@@ -39,7 +39,11 @@
         "img": "img/projects/MenuApp_Homescreen.jpg",
         "img2": "img/projects/MenuApp_ListMenu.jpg",
         "name": "Menu App",
+<<<<<<< HEAD
         "description": "During the course on Android they asked us to make an app for the exam. My idea was to create a Menu App. An application that makes a proposition about what you can eat for dinner. In this app you have to enter a number of dishes with it’s preparation and ingredients. When you start the application, it gives you a random meal"
+=======
+        "description": "During the course on Android they asked us to make an app for the exam. My idea was to create a Menu App. An application that makes a proposition about what you can eat for dinner. In this app you have to enter a number of your favorite dishes with it’s preparation and ingredients. When you start the application, it gives you a random meal"
+>>>>>>> d7cd4cd27ff09ff0e7d6b44bc5af0f113628bc5b
       },
       {
         "img": "img/projects/StadsApp.jpg",
@@ -60,7 +64,7 @@
       {
         "img": "img/projects/Pazaak.png",
         "name": "Pazaak",
-        "description": "This was the first project I made in my first year of university. The goal was to work as a team."
+        "description": "his was my first project I made in my first year of university. The goal was to work as a team."
       }
     ],
     "allProjects": "See all projects"
