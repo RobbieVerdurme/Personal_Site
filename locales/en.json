@@ -11,11 +11,11 @@
   },
   "home": {
     "title": "Welcome",
-    "introduction": "This portfolio has the goal of informing you what my competences an skills are. I hope this site gives you a broad picture of my competences and personality."
+    "introduction": "The goal of this portfolio is to give you an overview of my competences and skills."
   },
   "projects": {
     "previous": "Previous",
-    "next" : "Next"
+    "next": "Next"
   },
   "profile": {
     "resumeTab": "Curriculum Vitae",
@@ -24,10 +24,10 @@
     "github": "Follow me on Github",
     "facebook": "Follow me on Facebook",
     "linkedin": "Follow me on Linkedin",
-    "intro": "My name is Robbie Verdurme, I was born on 20th of January 1998 in Ghent. In the everyday life you can find me in the classroom. I'm studying computer science at the High school Ghent. I'm now in my 3th year and choose the study field mobile. I did this mostly because this appeals to me, because I can put more of myself in the code.",
-    "primarySchool": "I spend my primary school lessons from the first grade until my sixth at the school Sint-lieven Kolegem. This school has many caring teachers and is Commited to helping you feel welcome. This was also the case for me when I first came there, I was still unsure about the people there and everything was still new. Thanks to the help of the lovely teachers I felt almost right at home in the group.",
-    "highSchool": "For high school I went to visitatie mariakerke. Despite that this school has a pretty bad reputation among the disciples, the teachers are still the strength of this school.Here I had to make my choice on what I wanted to study further. With the necessary guidance I choose IT because this appealed to me.",
-    "future": "The choice to study further was made almost immediately. Because IT is wat I wanted to do later on (IT'er at a company) I had to have a higher degree than I already had. The choice of which high school was already as good as made, so i went to HoGent.",
+    "intro": "My name is Robbie Verdurme, I was born on 20th of January 1998 in Ghent. I’m studying computer sciences at HoGent and I’m in my third year. My specialization is programming applications for Android and Windows mobile phones. It is a very appealing study as I can put a lot of creativity into code.",
+    "primarySchool": "I started my elementary school at Sint Lievens Kolegem. As all new students I was unsure about my future at that point but that school, and it’s great teachers, set me on a path to be a fine adult. I felt really comfortable at that school and still have good memories of it. My fellow students and I made a really close group and still today I see some of them.",
+    "highSchool": "My high school was Visitatie Mariakerke and despite the reputation that school had amongst students, it was a great school too. As any institute, it’s the people -in this case the teachers- that makes it great. It's in that school that my interest began to grow for computer sciences.",
+    "future": "When I left Visitatie my choice for University was made instantly : It had to be a university where they taught IT, more specifically programming. I wanted to be a programmer. So I went to HoGent.",
     "projects": [
       {
         "img": "img/projects/MultiWeb_Challenge.jpg",
@@ -39,7 +39,11 @@
         "img": "img/projects/MenuApp_Homescreen.jpg",
         "img2": "img/projects/MenuApp_ListMenu.jpg",
         "name": "Menu App",
-        "description": "During the course our Android they asked us to make an app for the exam. My idea was a design of a menuapp so the person who uses the app not immediately know what to eat that evening and obtain a proposal of a dish. For this I called the menuapp. In this app you can enter a number of dishes with the preparation so as to compile a list of dishes together."
+<<<<<<< HEAD
+        "description": "During the course on Android they asked us to make an app for the exam. My idea was to create a Menu App. An application that makes a proposition about what you can eat for dinner. In this app you have to enter a number of dishes with it’s preparation and ingredients. When you start the application, it gives you a random meal"
+=======
+        "description": "During the course on Android they asked us to make an app for the exam. My idea was to create a Menu App. An application that makes a proposition about what you can eat for dinner. In this app you have to enter a number of your favorite dishes with it’s preparation and ingredients. When you start the application, it gives you a random meal"
+>>>>>>> d7cd4cd27ff09ff0e7d6b44bc5af0f113628bc5b
       },
       {
         "img": "img/projects/StadsApp.jpg",
@@ -50,17 +54,17 @@
         "img": "img/projects/BreakoutBox_Java.png",
         "img2": "img/projects/BreakoutBox_NET.png",
         "name": "BreakoutBox",
-        "description": "This project was realised in the 2nd year of High school. The intention is have a concrete elaboration of an escape room. But instead of looking around for hints to continue, you have to find the answer of an exercise. If you solve all the questions you will find the treasure."
+        "description": "This project was realised in the 2nd year of University. It’s a kind of escape room but instead of looking around for hints to continue, you have to find the answer to an exercise. If you solve all the questions you will find the treasure."
       },
       {
         "img": "img/projects/AngularSite_homescreen.jpg",
         "name": "Angular Site",
-        "description": "This site was a project myself. The intention was to create a photo site for my mother. This site should be user-friendly for both the user and for my mother. This site also could submit my mother photos to customize and brand new place."
+        "description": "This site was a project of my own. The intention is to upload pictures. A kind of google photo’s as you will."
       },
       {
         "img": "img/projects/Pazaak.png",
         "name": "Pazaak",
-        "description": "This is the first project that was realised. It was made in the first year of high school. Here you can learn how to work in a team."
+        "description": "This was the first project I made in my first year of university. The goal was to work as a team."
       }
     ],
     "allProjects": "See all projects"
