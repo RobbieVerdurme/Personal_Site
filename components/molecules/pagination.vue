@@ -71,7 +71,7 @@ export default {
      * get the total page cound
      */
     totalPageCount () {
-      return Math.floor(this.items.length / this.limit)
+      return Math.ceil(this.items.length / this.limit)
     }
   },
   watch: {
