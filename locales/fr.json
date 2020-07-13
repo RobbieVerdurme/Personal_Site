@@ -15,7 +15,7 @@
   },
   "projects": {
     "previous": "Précédent",
-    "next" : "Suivant"
+    "next": "Suivant"
   },
   "profile": {
     "resumeTab": "Curriculum Vitae",
@@ -29,6 +29,26 @@
     "highSchool": "Mes études secondaires, je les ai suivies à Visitatie Mariakerke. Malgré la mauvaise réputation de cette école parmi les élèves, les enseignants en sont le point fort. Et c’est là que j’ai décidé ce que je voulais faire plus tard, l’informatique.",
     "future": "Pour l’enseignement supérieur, le choix de la matière a été directement décidé. Je savais ce que je voulais faire pour mon futur. Je devais avoir un plus haut niveau de connaissances que j’avais déjà. C’est la raison pour laquelle j’ai choisi cette école supérieure.",
     "projects": [
+      {
+        "img": "img/projects/portal-bot.png",
+        "name": "portal-bot",
+        "description": "Il s'agit d'un bot de discorde créé dans le thème de la série rick and morty. Ce bot de portail peut gérer un nouveau canal de texte, gérer les rôles, sécuriser les canaux de texte, demander un devis complice, gérer les messages et envoyer des messages à l'utilisateur avec toutes les commandes"
+      },
+      {
+        "img": "img/projects/StageOpdrachtDigipolis.png",
+        "name": "Stage opdracht Digipolis",
+        "description": "Mon stage chez digipolis consistait à développer une application web progressive généralement déployable et à étudier les possibilités de l'application web progressive dans le contexte de la ville de Gand."
+      },
+      {
+        "img": "img/projects/MenuApp_Homescreen.jpg",
+        "name": "MenuappV2",
+        "description": "Il s'agit d'une deuxième version de l'application de menu existante. Dans cette application, le code a été mis à jour avec le sujet étudié du cours Android."
+      },
+      {
+        "img": "img/projects/MenuAppPWA.png",
+        "name": "Menuapp PWA",
+        "description": "Cette application a été créée dans le cadre de la thèse de licence afin de faire une comparaison entre une application native et une application web progressive."
+      },
       {
         "img": "img/projects/MultiWeb_Challenge.jpg",
         "img2": "img/projects/MultiWeb_Login.jpg",
