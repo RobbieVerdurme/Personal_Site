@@ -15,7 +15,7 @@
   },
   "projects": {
     "previous": "Vorige",
-    "next" : "Volgende"
+    "next": "Volgende"
   },
   "profile": {
     "resumeTab": "Curriculum Vitae",
@@ -29,6 +29,26 @@
     "highSchool": "Voor het middelbare onderwijs heb ik besloten te veranderen van school en heb zes jaar les gevolgd op de Visitatie te Mariakerke. Ondanks het feit dat deze school een redelijk slechte reputatie heeft onder de leerlingen, zijn de leerkrachten nog altijd de sterkte punten van deze school. Hier moest ik een eerste studiekeuze maken. Met de nodige begeleiding heb ik uiteindelijk voor de keuze IT gekozen. Deze richting ligt mij het meest en ik wou hierin ook verder in de hogeschool.",
     "future": "De keuze om verder te studeren was zo goed als onmiddellijk gemaakt. Voor de job die ik later wil uitvoeren (IT-er van een bedrijf) is nu eenmaal een bachelor diploma noodzakelijk. Ook de keuze van hogeschool was al zo goed als zeker. De keuze ging tussen Hogent (mijn huidige hogeschool) en Odisee. Mijn voorkeur ging uiteindelijk uit naar Hogent.",
     "projects": [
+      {
+        "img": "img/projects/portal-bot.png",
+        "name": "portal-bot",
+        "description": "Dit is een discord bot die gemaakt is in het thema van de rick and morty serie. Deze portal-bot kan een nieuwe text channel beheren, rollen beheren, text channels beveiligen, een rick en morty quote opvragen, berichten beheren en de gebruiker een bericht sturen met alle commando's"
+      },
+      {
+        "img": "img/projects/StageOpdrachtDigipolis.png",
+        "name": "Stage opdracht Digipolis",
+        "description": "Mijn stage bij digipolis was het uitwerken van een algemeen inzetbare progressive web applicatie en de mogelijkheden van de progressive web applicatie onderzoeken in de context van Stad Gent."
+      },
+      {
+        "img": "img/projects/MenuApp_Homescreen.jpg",
+        "name": "MenuappV2",
+        "description": "Dit is een tweede versie van de bestaande menu app. In deze applicatie werd de code geupdate met de bestudeerde leerstof van het opleidingsonderdeel Android."
+      },
+      {
+        "img": "img/projects/MenuAppPWA.png",
+        "name": "Menuapp PWA",
+        "description": "Deze applicatie werd gemaakt omwille van de bachelorproef om een vergelijking te kunnen maken tussen een native applicatie en een progressive web applicatie."
+      },
       {
         "img": "img/projects/MultiWeb_Challenge.jpg",
         "img2": "img/projects/MultiWeb_Login.jpg",
