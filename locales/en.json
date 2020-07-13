@@ -30,6 +30,26 @@
     "future": "When I left Visitatie my choice for University was made instantly : It had to be a university where they taught IT, more specifically programming. I wanted to be a programmer. So I went to HoGent.",
     "projects": [
       {
+        "img": "img/projects/portal-bot.png",
+        "name": "portal-bot",
+        "description": "This is a discord bot made in the theme of the rick and morty series. This portal bot can manage a text channels, manage roles, secure text channels, request a rick and morty quote, manage messages and send a message to the user with all commands"
+      },
+      {
+        "img": "img/projects/StageOpdrachtDigipolis.png",
+        "name": "Stage internship Digipolis",
+        "description": "My internship at digipolis was developing a generally deployable progressive web application and investigating the possibilities of the progressive web application in the context of the City of Ghent."
+      },
+      {
+        "img": "img/projects/MenuApp_Homescreen.jpg",
+        "name": "MenuappV2",
+        "description": "This is a second version of the existing menu app. In this application the code was updated with the studied subject matter of the Android course."
+      },
+      {
+        "img": "img/projects/MenuAppPWA.png",
+        "name": "Menuapp PWA",
+        "description": "This application was created for the purpose of the bachelor's thesis in order to make a comparison between a native application and a progressive web application."
+      },
+      {
         "img": "img/projects/MultiWeb_Challenge.jpg",
         "img2": "img/projects/MultiWeb_Login.jpg",
         "name": "MultiWeb",
