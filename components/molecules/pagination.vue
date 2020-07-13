@@ -9,6 +9,20 @@
       </li>
       <!--/Previous page-->
 
+      <!--Display first item-->
+      <li v-if="fromPage !== 1 && totalPageCount !== 1" class="page-item">
+        <nuxt-link :to="{name: 'projects', query: {page: 1}}" class="page-link">
+          1
+        </nuxt-link>
+      </li>
+      <!--/Display first item-->
+
+      <!--If ... has to be displayed-->
+      <li v-if="fromPage !== 1 && fromPage - 1 !== 1" class="page-item">
+        ...
+      </li>
+      <!-- /If ... has to be displayed-->
+
       <!--Pages-->
       <li
         v-for="pagenumber in pageItems"
@@ -22,6 +36,23 @@
         </nuxt-link>
       </li>
       <!--/Pages-->
+
+      <!--If ... has to be displayed-->
+      <li v-if="toPage !== totalPageCount " class="page-item">
+        ...
+      </li>
+      <!--/If ... has to be displayed-->
+
+      <!--Display last item-->
+      <li v-if="toPage !== totalPageCount" class="page-item">
+        <nuxt-link
+          :to="{name: 'projects', query: {page: totalPageCount}}"
+          class="page-link"
+        >
+          {{ totalPageCount }}
+        </nuxt-link>
+      </li>
+      <!--/Display last item-->
 
       <!--Next page-->
       <li v-if="next" class="page-item">
