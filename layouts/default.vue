@@ -23,6 +23,7 @@ export default {
           return 'landing-page'
         case 'profile':
         case 'projects':
+        case 'projects-name':
           return 'profile-page'
         default:
           return ''
