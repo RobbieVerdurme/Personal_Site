@@ -47,7 +47,7 @@
 
               <!--photo's-->
               <template slot="tab-pane-2">
-                <img v-for="img in project.img" :key="img" :src="'../' + img" class="project-img" :alt="project.name">
+                <img v-for="img in project.img" :key="img" :src="img" class="project-img" :alt="project.name">
               </template>
               <!--/photo's-->
             </tabs>
@@ -68,7 +68,7 @@ export default {
   data () {
     return {
       name: this.$route.params.name,
-      header: '../img/background.jpg'
+      header: 'img/background.jpg'
     }
   },
   computed: {
