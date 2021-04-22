@@ -30,6 +30,14 @@
     "future": "When I left Visitatie my choice for University was made instantly : It had to be a university where they taught IT, more specifically programming. I wanted to be a programmer. So I went to HoGent.",
     "projects": [
       {
+        "name" : "Command executioner",
+        "description" : "The command executioner is a service that consists of 2 parts. The first part is the core functionality that is mainly concerned with executing different types of commands. These commands can range from generating a pdf file or xls file to sending an email. The second part is an extension of the first part. Namely that you can execute commands in a different environment that the command executioner is running. For example, you are at school and you want to print to the printer at your home. Then the command executioner will communicate with a linked program to pass the command to print the file at your home.",
+        "creators" : "Robbie Verdurme, Kevin Verstraete",
+        "inventors" : "Kevin Verstraete",
+        "IDE": "Visual Studio",
+        "ProgrammingLanguage" : "C#"
+      },
+      {
         "img": ["img/projects/portal-bot.png"],
         "name": "portal-bot",
         "description": "This is a discord bot made in the theme of the rick and morty series. This portal bot can manage a text channels, manage roles, secure text channels, request a rick and morty quote, manage messages and send a message to the user with all commands",
