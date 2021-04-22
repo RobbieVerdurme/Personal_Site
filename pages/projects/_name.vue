@@ -34,6 +34,24 @@
               <template slot="tab-pane-1">
                 <md-table>
                   <md-table-row>
+                    <md-table-cell>{{ $t('projectdetail.Creators') }}</md-table-cell>
+                    <md-table-cell>{{ project.creators }}</md-table-cell>
+                  </md-table-row>
+                  <md-table-row>
+                    <md-table-cell>{{ $t('projectdetail.Inventors') }}</md-table-cell>
+                    <md-table-cell>{{ project.inventors }} </md-table-cell>
+                  </md-table-row>
+                  <md-table-row v-if="project.githubLink">
+                    <md-table-cell>Github Project Link</md-table-cell>
+                    <md-table-cell>
+                      <ul>
+                        <li v-for="gitlink in project.githubLink" :key="gitlink">
+                          <a :href="gitlink">{{ gitlink }}</a>
+                        </li>
+                      </ul>
+                    </md-table-cell>
+                  </md-table-row>
+                  <md-table-row>
                     <md-table-cell>{{ $t('projectdetail.programmingLanguage') }}</md-table-cell>
                     <md-table-cell>{{ project.ProgrammingLanguage }}</md-table-cell>
                   </md-table-row>
@@ -113,5 +131,12 @@ export default {
   max-height: 50vh;
   width: auto;
   padding: 1em;
+}
+
+ul {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  text-align: left !important;
 }
 </style>

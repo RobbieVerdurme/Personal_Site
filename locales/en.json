@@ -42,70 +42,98 @@
         "name": "portal-bot",
         "description": "This is a discord bot made in the theme of the rick and morty series. This portal bot can manage a text channels, manage roles, secure text channels, request a rick and morty quote, manage messages and send a message to the user with all commands",
         "ProgrammingLanguage": "Javascript",
-        "IDE": "Visual studio code"
+        "IDE": "Visual studio code",
+        "githubLink" : ["https://github.com/RobbieVerdurme/portal-bot"],
+        "creators" : "Robbie Verdurme",
+        "inventors" : "Robbie Verdurme"
       },
       {
         "img": ["img/projects/StageOpdrachtDigipolis.png"],
         "name": "Stage internship Digipolis",
         "description": "My internship at digipolis was developing a generally deployable progressive web application and investigating the possibilities of the progressive web application in the context of the City of Ghent.",
         "ProgrammingLanguage": "Javascript",
-        "IDE":"Visual studio code"
+        "IDE":"Visual studio code",
+        "githubLink" : ["https://github.com/RobbieVerdurme/Stageopdracht_Digipolis"],
+        "creators" : "Robbie Verdurme, Bart Delrue",
+        "inventors" : "Robbie Verdurme, Bart Delrue"
       },
       {
         "img": ["img/projects/MenuApp_Homescreen.jpg"],
         "name": "MenuappV2",
         "description": "This is a second version of the existing menu app. In this application the code was updated with the studied subject matter of the Android course.",
         "ProgrammingLanguage": "Kotlin",
-        "IDE":"Android studio"
+        "IDE":"Android studio",
+        "githubLink": ["https://github.com/RobbieVerdurme/MenuAppV2"],
+        "creators" : "Robbie Verdurme",
+        "inventors" : "Robbie Verdurme"
       },
       {
         "img": ["img/projects/MenuAppPWA.png"],
         "name": "Menuapp PWA",
         "description": "This application was created for the purpose of the bachelor's thesis in order to make a comparison between a native application and a progressive web application.",
-        "ProgrammingLanguage": "Kotlin",
-        "IDE": "Android studio"
+        "ProgrammingLanguage": "Javascript",
+        "IDE": "Visual studio code",
+        "githubLink": ["https://github.com/RobbieVerdurme/MenuApp_PWA"],
+        "creators" : "Robbie Verdurme",
+        "inventors" : "Robbie Verdurme"
       },
       {
         "img": ["img/projects/MultiWeb_Challenge.jpg", "img/projects/MultiWeb_Login.jpg"],
         "name": "MultiWeb",
         "description": "This app was commissioned by the company Multimed under the course Projects 3. Multimed wanted an app where the user had an overview of the challenges they still have to complete in order to live healthier",
         "ProgrammingLanguage": "Kotlin & C# & Typescript",
-        "IDE": "Android studio & Visual studio & Visual studio code"
+        "IDE": "Android studio & Visual studio & Visual studio code",
+        "githubLink": ["https://github.com/RobbieVerdurme/Projecten3_Angular", "https://github.com/RobbieVerdurme/Projecten3_Android", "https://github.com/RobbieVerdurme/Projecten3_Backend"],
+        "creators" : "Robbie Verdurme, Shawn van Ranst, Jarni Naudts, Ruben Grillaert, Arno Boel, Navaron Bracke",
+        "inventors" : "Robbie Verdurme, Shawn van Ranst, Jarni Naudts, Ruben Grillaert, Arno Boel, Navaron Bracke"
       },
       {
         "img": ["img/projects/MenuApp_Homescreen.jpg", "img/projects/MenuApp_ListMenu.jpg"],
         "name": "Menu App",
         "description": "During the course on Android they asked us to make an app for the exam. My idea was to create a Menu App. An application that makes a proposition about what you can eat for dinner. In this app you have to enter a number of dishes with it’s preparation and ingredients. When you start the application, it gives you a random meal",
         "ProgrammingLanguage": "Kotlin",
-        "IDE": "Android studio"
+        "IDE": "Android studio",
+        "githubLink": ["https://github.com/RobbieVerdurme/MenuApp"],
+        "creators" : "Robbie Verdurme",
+        "inventors" : "Robbie Verdurme"
       },
       {
         "img": ["img/projects/StadsApp.jpg"],
         "name": "Stads App",
         "description": "We also spent time during our training to focus on how to make a good app for windows. With this app we want to solve the problem of the surrounding shops. With our app you can see all the shops in the neighborhood. These stores have their own category and discounts.",
         "ProgrammingLanguage": "C#",
-        "IDE": "Visual studio & Blend"
+        "IDE": "Visual studio & Blend",
+        "githubLink": ["https://github.com/RobbieVerdurme/ProjectWindows"],
+        "creators" : "Robbie Verdurme, Angelo Carly, Simon Anckaert",
+        "inventors" : "Robbie Verdurme, Angelo Carly, Simon Anckaert"
       },
       {
         "img": ["img/projects/BreakoutBox_Java.png", "img/projects/BreakoutBox_NET.png"],
         "name": "BreakoutBox",
         "description": "This project was realised in the 2nd year of University. It’s a kind of escape room but instead of looking around for hints to continue, you have to find the answer to an exercise. If you solve all the questions you will find the treasure.",
         "ProgrammingLanguage": "Java & C#",
-        "IDE": "Netbeans & Visual studio"
+        "IDE": "Netbeans & Visual studio",
+        "creators" : "Robbie Verdurme, Pieter Vandendriessche, Angelo Carly, Simon Anckaert",
+        "inventors" : "Robbie Verdurme, Pieter Vandendriessche, Angelo Carly, Simon Anckaert"
       },
       {
         "img": ["img/projects/AngularSite_homescreen.jpg"],
         "name": "Angular Site",
         "description": "This site was a project of my own. The intention is to upload pictures. A kind of google photo’s as you will.",
         "ProgrammingLanguage": "Typescript",
-        "IDE": "Visual studio code"
+        "IDE": "Visual studio code",
+        "githubLink" : ["https://github.com/RobbieVerdurme/ProjectWebIV"],
+        "creators" : "Robbie Verdurme",
+        "inventors" : "Robbie Verdurme"
       },
       {
         "img": ["img/projects/Pazaak.png"],
         "name": "Pazaak",
         "description": "This was the first project I made in my first year of university. The goal was to work as a team.",
         "ProgrammingLanguage": "Java",
-        "IDE": "Netbeans"
+        "IDE": "Netbeans",
+        "creators" : "Robbie Verdurme, Chiel Sinnaeve",
+        "inventors" : "Robbie Verdurme, Chiel Sinnaeve"
       }
     ],
     "allProjects": "See all projects"
@@ -114,7 +142,9 @@
     "readmore": "read more",
     "programmingLanguage": "Programming language",
     "info": "info",
-    "photos": "photos"
+    "photos": "photos",
+    "Creators" : "Creators",
+    "Inventors" : "Inventers"
   },
   "contact": {
     "title": "Contact",
