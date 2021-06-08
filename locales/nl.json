@@ -31,7 +31,7 @@
     "projects": [
       {
         "name" : "Command executioner",
-        "description" : "De command executioner is een service dat bestaat uit 2 delen. Het eerste deel is de core functionaliteit die zich vooral bezig houd met het uitvoeren van verschillende soorten commando's. Deze commando's kunnen kan gaan van het genereren van een pdf bestand of xls bestand tot het verzenden van een mail. Het tweede deel is een uitbereiding op het eerste deel. Namelijk dat je commando's kan uitvoeren in een andere omgeving dat de command executioner draait. Bijvoorbeeld je bent op school en je wilt printen naar de printer bij jou thuis. Dan gaat de command executioner communiceren met een gelinkt programma om het command door te geven voor het bestand bij jou thuis af te printen.",
+        "description" : "De command executioner is een service dat bestaat uit 2 delen. Het eerste deel is de core functionaliteit die zich vooral bezig houdt met het uitvoeren van verschillende soorten commando's. Deze commando's kunnen gaan van het genereren van een pdf bestand, xls bestand tot het verzenden van een mail. Het tweede deel is een uitbereiding op het eerste deel. Er kunnen commando's worden uitgevoerd in een andere omgeving dan deze op welke de command executioner draait. Bijvoorbeeld je bent op school en je wilt printen naar de printer bij jou thuis. De command executioner zal dan communiceren aan de hand van een gelinkt programma om het commando door te geven die dan het bestand bij jou thuis af zal printen.",
         "creators" : "Robbie Verdurme, Kevin Verstraete",
         "inventors" : "Kevin Verstraete",
         "IDE": "Visual Studio",

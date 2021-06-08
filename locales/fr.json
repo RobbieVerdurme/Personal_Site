@@ -31,7 +31,7 @@
     "projects": [
       {
         "name" : "Command executioner",
-        "description" : "L'exécuteur de commandes est un service composé de 2 parties. La première partie est la fonctionnalité de base qui concerne principalement l'exécution de différents types de commandes. Ces commandes peuvent aller de la génération d'un fichier pdf ou xls à l'envoi d'un e-mail. La deuxième partie est une extension de la première partie. À savoir que vous pouvez exécuter des commandes dans un environnement différent de celui que l'exécuteur de commandes est en cours d'exécution. Par exemple, vous êtes à l'école et vous souhaitez imprimer sur l'imprimante de votre domicile. Ensuite, l'exécuteur de commandes communiquera avec un programme lié pour passer la commande d'impression du fichier chez vous.",
+        "description" : "Le command executioner est un service qui se compose de deux parties. La première partie est la fonctionnalité de base qui concerne principalement l'exécution de différents types de commandes. Ces commandes peuvent aller de la génération d'un fichier pdf, xls à l'envoi d'un mail. La deuxième partie est une extension de la première partie. Les commandes sont exécuter dans un environnement différent de celui sur lequel tourne le command executioner. Par exemple, vous êtes à l'école et vous souhaitez imprimer sur l'imprimante de votre domicile. Le command executioner communiquera avec un programme lié pour transmettre la commande d'impression du fichier à votre domicile.",
         "creators" : "Robbie Verdurme, Kevin Verstraete",
         "inventors" : "Kevin Verstraete",
         "IDE": "Visual Studio",
