@@ -1,7 +1,7 @@
 <template>
   <md-card>
     <md-card-content class="md-layout">
-      <div class="md-layout-item md-size-60 ml-auto">
+      <div :class="project.img ? 'md-layout-item md-size-60 ml-auto' : 'md-layout-item'">
         <!-- project info -->
         <h4 class="card-title">
           {{ project.name }}
@@ -17,7 +17,7 @@
       </div>
 
       <!--Images-->
-      <div class="md-layout-item md-size-40 ml-auto">
+      <div :class="project.img? 'md-layout-item md-size-40 ml-auto' : ''">
         <img v-for="img in project.img" :key="img" :src="img" class="project-img" :alt="project.name">
       </div>
       <!--/Images-->

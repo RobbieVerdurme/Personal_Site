@@ -23,8 +23,8 @@
           <!--TABS-->
           <div class="tabs">
             <tabs
-              :tab-name="[$t('projectdetail.info'), $t('projectdetail.photos')]"
-              :tab-icon="['info', 'image']"
+              :tab-name="project.img ? [$t('projectdetail.info'), $t('projectdetail.photos')]: [$t('projectdetail.info')]"
+              :tab-icon="project.img ? ['info', 'image'] : ['info']"
               plain
               nav-pills-icons
               color-button="success"

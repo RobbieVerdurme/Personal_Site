@@ -30,6 +30,14 @@
     "future": "Pour l’enseignement supérieur, le choix de la matière a été directement décidé. Je savais ce que je voulais faire pour mon futur. Je devais avoir un plus haut niveau de connaissances que j’avais déjà. C’est la raison pour laquelle j’ai choisi cette école supérieure.",
     "projects": [
       {
+        "name" : "Command executioner",
+        "description" : "Le command executioner est un service qui se compose de deux parties. La première partie est la fonctionnalité de base qui concerne principalement l'exécution de différents types de commandes. Ces commandes peuvent aller de la génération d'un fichier pdf, xls à l'envoi d'un mail. La deuxième partie est une extension de la première partie. Les commandes sont exécuter dans un environnement différent de celui sur lequel tourne le command executioner. Par exemple, vous êtes à l'école et vous souhaitez imprimer sur l'imprimante de votre domicile. Le command executioner communiquera avec un programme lié pour transmettre la commande d'impression du fichier à votre domicile.",
+        "creators" : "Robbie Verdurme, Kevin Verstraete",
+        "inventors" : "Kevin Verstraete",
+        "IDE": "Visual Studio",
+        "ProgrammingLanguage" : "C#"
+      },
+      {
         "img": ["img/projects/portal-bot.png"],
         "name": "portal-bot",
         "description": "Il s'agit d'un bot de discorde créé dans le thème de la série rick and morty. Ce bot de portail peut gérer un nouveau canal de texte, gérer les rôles, sécuriser les canaux de texte, demander un devis complice, gérer les messages et envoyer des messages à l'utilisateur avec toutes les commandes",
