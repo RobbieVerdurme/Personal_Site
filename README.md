@@ -9,6 +9,8 @@ Look at the [Changelog](https://github.com/RobbieVerdurme/Personal_Site/blob/dev
 This application is live on [Gitpages](https://robbieverdurme.github.io/Personal_Site/)  
 The developement branch is live on [Heroku](https://robbieverdurme-dev.herokuapp.com/)
 
+a general cv can be generated with the link https://resume.github.io/?RobbieVerdurme
+
 ## Build Setup
 
 ```bash
