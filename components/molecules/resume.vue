@@ -3,7 +3,7 @@
     <div class="center">
       <md-progress-spinner v-if="loading" md-mode="indeterminate" />
     </div>
-    <iframe src="https://drive.google.com/file/d/1LPkvrP2dfAPz1HTo7DX1TsajFuY2YzxQ/preview" frameborder="0" :onLoad="loading=false">
+    <iframe src="https://drive.google.com/file/d/1VMKJFcEmAuy0DrVG4sGrPbeS-cXPtcBz/preview" frameborder="0" :onLoad="loading=false">
       <span>{{ $t('error.errorPreview') }}</span>
     </iframe>
   </div>
