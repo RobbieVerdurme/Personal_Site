@@ -37,7 +37,7 @@ export default {
       currentPage: null,
       projects: this.$t('profile.projects'),
       filterdItems: [],
-      header: 'img/background.jpg'
+      header: process.env.imgPrefix + 'img/background.jpg'
     }
   },
   computed: {

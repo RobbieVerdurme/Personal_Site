@@ -124,8 +124,8 @@ export default {
   data () {
     return {
       // images
-      header: 'img/background.jpg',
-      img: 'img/faces/ProfilePic.jpg',
+      header: process.env.imgPrefix + 'img/background.jpg',
+      img: process.env.imgPrefix + 'img/faces/ProfilePic.jpg',
 
       // project data
       projects: this.$t('profile.projects').slice(0, 2)
