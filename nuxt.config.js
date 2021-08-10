@@ -5,8 +5,20 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 export default {
+
   ...routerBase,
+  /*
+  ** Setup process.env variable
+  */
+  env: {
+    imgPrefix: process.env.DEPLOY_ENV === 'GH_PAGES' ? '' : '/'
+  },
+
+  /**
+   ** Setup webpage mode
+   */
   mode: 'universal',
+
   /*
   ** Headers of the page
   */

@@ -32,7 +32,7 @@ export default {
   },
   data () {
     return {
-      header: 'img/background.jpg',
+      header: process.env.imgPrefix + 'img/background.jpg',
       name: null,
       email: null,
       message: null
