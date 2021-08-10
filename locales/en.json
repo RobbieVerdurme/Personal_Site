@@ -30,7 +30,8 @@
     "future": "When I left Visitatie my choice for University was made instantly : It had to be a university where they taught IT, more specifically programming. I wanted to be a programmer. So I went to HoGent.",
     "projects": [
       {
-        "name" : "filetoclassconverter",
+        "img" : ["img/projects/FiletoClassConverter.png"],
+        "name" : "C# FileToClassConverter Nuget",
         "description" : "The filetoclassconverter nuget is intended for people who often have to write data to different files. This nuget takes care of the conversion of the most commonly used file extensions such as csv and xml, which are always built in the same way.",
         "creators" : "Robbie Verdurme",
         "inventors" : "Robbie Verdurme",

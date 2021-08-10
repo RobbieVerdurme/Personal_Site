@@ -30,6 +30,7 @@
     "future": "Pour l’enseignement supérieur, le choix de la matière a été directement décidé. Je savais ce que je voulais faire pour mon futur. Je devais avoir un plus haut niveau de connaissances que j’avais déjà. C’est la raison pour laquelle j’ai choisi cette école supérieure.",
     "projects": [
       {
+        "img" : ["img/projects/FiletoClassConverter.png"],
         "name" : "C# FileToClassConverter Nuget",
         "description" : "Le nuget filetoclassconverter est destiné aux personnes qui doivent souvent écrire des données dans différents fichiers. Ce nuget s'occupe de la conversion des extensions de fichiers les plus couramment utilisées telles que csv et xml, qui sont toujours construites de la même manière.",
         "creators" : "Robbie Verdurme",
