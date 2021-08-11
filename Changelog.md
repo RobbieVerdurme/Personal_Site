@@ -4,8 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 ## [1.0.1]
+### Added
+- Some projects to the project tabs | 2021-08-10
+
 ### Changed
 - Pagination bug fix (totalpagecount) | 2020-05-05
+- Pagination bug fix (... showing when not needed) | 2021-08-11
+- Fix image prefix when not deploying to git | 2021-08-10
 
 ## [Released]
 ## [1.0.0]
