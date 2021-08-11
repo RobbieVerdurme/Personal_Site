@@ -84,6 +84,12 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      // for debuging
+      if (ctx.isDev) {
+        config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+      }
+
+      // sass loader
       config.module.rules.push({
         test: /\.scss$/,
         use: [
