@@ -38,7 +38,7 @@
       <!--/Pages-->
 
       <!--If ... has to be displayed-->
-      <li v-if="toPage !== totalPageCount " class="page-item">
+      <li v-if="toPage !== totalPageCount && !this.pageItems.find(x => (x + 1) === this.totalPageCount)" class="page-item">
         ...
       </li>
       <!--/If ... has to be displayed-->
@@ -84,7 +84,7 @@ export default {
       offset: 0,
       limit: 3,
       // settings to configure pagination
-      pagelimit: 2,
+      pagelimit: 3,
       fromPage: null,
       toPage: null,
       next: null,
@@ -121,16 +121,16 @@ export default {
   },
   methods: {
     updateProperties () {
+      const pagelimitSides = Math.floor(this.pagelimit / 2)
       // get max page and min page
-      this.toPage = parseInt(this.currentPage) + Math.floor(this.pagelimit / 2) > this.totalPageCount ? this.totalPageCount : parseInt(this.currentPage) + Math.floor(this.pagelimit / 2)
-      this.fromPage = this.currentPage - Math.floor(this.pagelimit / 2) < 1
+      this.toPage = parseInt(this.currentPage) + pagelimitSides > this.totalPageCount ? this.totalPageCount : parseInt(this.currentPage) + pagelimitSides
+      this.fromPage = parseInt(this.currentPage) - pagelimitSides < 1
         ? 1
         : this.toPage === this.totalPageCount
           ? this.totalPageCount - this.pagelimit + 1
-          : this.currentPage - Math.floor(this.pagelimit / 2)
+          : parseInt(this.currentPage) - pagelimitSides
       // generate the page numbers
       let countFromPage = this.fromPage
-      // eslint-disable-next-line no-unused-vars
       this.pageItems = [...new Array(this.pagelimit)].map(x => countFromPage++)
       // generate pageoffset
       this.offset = this.currentPage === 1 ? 0 : ((this.currentPage - 1) * this.limit)
