@@ -21,8 +21,8 @@ jobs:
         with:
           node-version: 14
 
-      - name: Build application
-        run: npm run build
-        
       - name: lint
         run: npm run lint
+        
+      - name: Build application
+        run: npm run build
