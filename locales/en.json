@@ -32,7 +32,7 @@
       {
         "img" : ["img/projects/FiletoClassConverter.png"],
         "name" : "C# FileToClassConverter Nuget",
-        "description" : "The filetoclassconverter nuget is intended for people who often have to write data to different files. This nuget takes care of the conversion of the most commonly used file extensions such as csv and xml, which are always built in the same way.",
+        "description" : "The filetoclassconverter nuget is intended for people who need to write data to different files. This nuget converts the most commonly used file extensions like csv and xml which are always structured in the same way.",
         "creators" : "Robbie Verdurme",
         "inventors" : "Robbie Verdurme",
         "IDE": "Visual Studio",
