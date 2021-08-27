@@ -65,7 +65,7 @@
 
               <!--photo's-->
               <template slot="tab-pane-2">
-                <img v-for="img in project.img" :key="img" :src="img" class="project-img" :alt="project.name">
+                <img v-for="img in project.img" :key="img" :src="getImgSrc(img)" class="project-img" :alt="project.name">
               </template>
               <!--/photo's-->
             </tabs>
@@ -86,7 +86,7 @@ export default {
   data () {
     return {
       name: this.$route.params.name,
-      header: 'img/background.jpg'
+      header: process.env.imgPrefix + 'img/background.jpg'
     }
   },
   computed: {
@@ -103,6 +103,11 @@ export default {
      */
     project () {
       return this.$t('profile.projects').find(p => p.name === this.name)
+    }
+  },
+  methods: {
+    getImgSrc (imgSrc) {
+      return process.env.imgPrefix + imgSrc
     }
   }
 }

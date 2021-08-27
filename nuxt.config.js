@@ -5,8 +5,20 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 export default {
+
   ...routerBase,
+  /*
+  ** Setup process.env variable
+  */
+  env: {
+    imgPrefix: process.env.DEPLOY_ENV === 'GH_PAGES' ? '' : '/'
+  },
+
+  /**
+   ** Setup webpage mode
+   */
   mode: 'universal',
+
   /*
   ** Headers of the page
   */
@@ -72,6 +84,12 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      // for debuging
+      if (ctx.isDev) {
+        config.devtool = ctx.isClient ? 'source-map' : 'inline-source-map'
+      }
+
+      // sass loader
       config.module.rules.push({
         test: /\.scss$/,
         use: [
